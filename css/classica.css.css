@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%; /*mesmo tamanho d aimagem */
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: absolute;
+    margin: 0 10px;
+
+} 
+
+.slide {
+    width: 25%;
+    display: flex;
+
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+.manual-navigation {
+    position: relative;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border:  2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
